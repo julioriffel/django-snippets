@@ -1,10 +1,13 @@
 # Snippets Django
 
-Copilado para consulta rapida:
+Compilado para consulta rapida:
 
-## Indice:
+### Indice:
 
-[Armazenamento](storagessnp/README.md)
+[Armazenamento](storagessnp/README.md) [ dropbox, storage]
+
+[Upload CSV](csvfile/README.md) [upload CSV]
 
 
-Julio cezar Riffel 2021
+
+Julio Cezar Riffel 2021+

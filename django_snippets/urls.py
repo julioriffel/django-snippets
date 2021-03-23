@@ -23,8 +23,9 @@ from django_snippets import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('upload/',include('storagessnp.urls')),
-    path('',  RedirectView.as_view(url='upload/')),
+    path('upload/', include('storagessnp.urls')),
+    path('csvupload/', include('csvfile.urls')),
+    path('', RedirectView.as_view(url='upload/')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

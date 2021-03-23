@@ -76,3 +76,4 @@ dmypy.json
 cython_debug/
 media/
 .idea/
+*/migrations/0*

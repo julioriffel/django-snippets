@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     'storagessnp',
     'django_dropbox_storage',
+
+    'csvfile'
 ]
 
 MIDDLEWARE = [
