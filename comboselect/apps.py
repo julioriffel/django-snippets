@@ -4,5 +4,5 @@
 from django.apps import AppConfig
 
 
-class CsvfileConfig(AppConfig):
-    name = 'csvfile'
+class ComboselectConfig(AppConfig):
+    name = 'comboselect'

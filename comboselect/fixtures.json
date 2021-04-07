@@ -1,0 +1,87 @@
+[
+  {
+    "model": "comboselect.country",
+    "pk": 1,
+    "fields": {
+      "name": "Brasil"
+    }
+  },
+  {
+    "model": "comboselect.country",
+    "pk": 2,
+    "fields": {
+      "name": "Estados Unidos"
+    }
+  },
+  {
+    "model": "comboselect.country",
+    "pk": 3,
+    "fields": {
+      "name": "Alemanha"
+    }
+  },
+  {
+    "model": "comboselect.city",
+    "pk": 1,
+    "fields": {
+      "country": 1,
+      "name": "São Paulo"
+    }
+  },
+  {
+    "model": "comboselect.city",
+    "pk": 2,
+    "fields": {
+      "country": 2,
+      "name": "Nova York"
+    }
+  },
+  {
+    "model": "comboselect.city",
+    "pk": 3,
+    "fields": {
+      "country": 3,
+      "name": "Berlin"
+    }
+  },
+  {
+    "model": "comboselect.city",
+    "pk": 4,
+    "fields": {
+      "country": 1,
+      "name": "Brasilia"
+    }
+  },
+  {
+    "model": "comboselect.city",
+    "pk": 5,
+    "fields": {
+      "country": 2,
+      "name": "Whashington"
+    }
+  },
+  {
+    "model": "comboselect.city",
+    "pk": 6,
+    "fields": {
+      "country": 3,
+      "name": "Frankfurd"
+    }
+  },
+  {
+    "model": "comboselect.city",
+    "pk": 7,
+    "fields": {
+      "country": 1,
+      "name": "Pato Branco"
+    }
+  },
+  {
+    "model": "comboselect.city",
+    "pk": 8,
+    "fields": {
+      "country": 3,
+      "name": "Munique"
+    }
+  }
+]

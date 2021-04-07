@@ -7,6 +7,9 @@ For more information on this file, see
 https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/
 """
 
+#  Copyright (c) 2021.
+#  Julio Cezar Riffel <julioriffel@gmail.com>
+
 import os
 
 from django.core.wsgi import get_wsgi_application

@@ -1,3 +1,6 @@
+#  Copyright (c) 2021.
+#  Julio Cezar Riffel <julioriffel@gmail.com>
+
 from django.urls import path
 
 from storagessnp import views

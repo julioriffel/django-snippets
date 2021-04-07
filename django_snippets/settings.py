@@ -9,11 +9,14 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
+#  Copyright (c) 2021.
+#  Julio Cezar Riffel <julioriffel@gmail.com>
+
 import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-from decouple import config
+from decouple import config, Csv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -21,12 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '6co2^f^tj*@w6)njc6x5s&$*&4$6j-g3gabbk953&doi65%ixf'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 # Application definition
 
@@ -41,7 +44,9 @@ INSTALLED_APPS = [
     'storagessnp',
     'django_dropbox_storage',
 
-    'csvfile'
+    'csvfile',
+
+    'comboselect',
 ]
 
 MIDDLEWARE = [
@@ -85,6 +90,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES['default'] = dj_database_url.config(default=config('DATABASE_URL'))
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
+#  Copyright (c) 2021.
+#  Julio Cezar Riffel <julioriffel@gmail.com>
+
 import os
 import sys
 
