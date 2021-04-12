@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'csvfile',
 
     'comboselect',
+
+    'heranca',
 ]
 
 MIDDLEWARE = [
