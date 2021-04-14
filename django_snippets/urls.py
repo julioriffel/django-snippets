@@ -25,6 +25,7 @@ from django_snippets import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('template/', include('apptemplate.urls')),
     path('upload/', include('storagessnp.urls')),
     path('csvupload/', include('csvfile.urls')),
     path('comboselect/', include('comboselect.urls')),
